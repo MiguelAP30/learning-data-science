@@ -8,13 +8,14 @@ Todos los modelos se entrenaron y evaluaron sobre **exactamente la misma divisi�
 
 | Modelo | MAE ↓ | RMSE ↓ | R² ↑ | |
 |---|---|---|---|---|
-| LinearRegression | 323.00 | 449.41 | 0.604 | ← **baseline** |
-| DecisionTreeRegressor | 316.12 | 487.69 | 0.534 | |
-| RandomForestRegressor | 243.78 | 342.62 | 0.770 | |
-| **GradientBoostingRegressor** | **228.48** | **322.29** | **0.796** | ← **modelo final** |
-| GradientBoosting + hiperparámetros ajustados | 228.48 | 322.29 | 0.796 | |
-| GradientBoosting + preprocesamiento | 232.07 | 325.26 | 0.793 | |
-| RandomForest + preprocesamiento | 231.63 | 325.24 | 0.793 | |
+| LinearRegression | 322.998 | 449.414 | 0.604 | ← **baseline** |
+| Lasso | 320.598 | 448.504 | 0.606 | |
+| DecisionTreeRegressor | 316.123 | 487.693 | 0.534 | |
+| RandomForestRegressor | 243.781 | 342.615 | 0.770 | |
+| **GradientBoostingRegressor** | **228.476** | **322.293** | **0.796** | ← **modelo final** |
+| GradientBoosting + hiperparámetros ajustados | 228.476 | 322.293 | 0.796 | |
+| GradientBoosting + preprocesamiento | 232.065 | 325.261 | 0.793 | |
+| RandomForest + preprocesamiento | 231.634 | 325.243 | 0.793 | |
 
 ↓ menor es mejor · ↑ mayor es mejor
 
@@ -22,8 +23,8 @@ Todos los modelos se entrenaron y evaluaron sobre **exactamente la misma divisi�
 
 | Métrica | Baseline | Final | Mejora |
 |---|---|---|---|
-| **MAE** | 323.00 | 228.48 | −29.3% de error |
-| **RMSE** | 449.41 | 322.29 | −28.3% de error |
+| **MAE** | 322.998 | 228.476 | −29.3% de error |
+| **RMSE** | 449.414 | 322.293 | −28.3% de error |
 | **R²** | 0.604 | 0.796 | +31.8% de varianza explicada |
 
 En términos interpretables: el modelo base se equivocaba en promedio en unos **323 alquileres** por día; el final se equivoca en unos **228**.
@@ -40,11 +41,13 @@ En términos interpretables: el modelo base se equivocaba en promedio en unos **
 
 Por eso el modelo final entregado es el **Gradient Boosting sin preprocesamiento**: es el que mejor rinde de todos los probados.
 
-## Modelo entregado
+## Modelo final
 
-`bike-share-model.pkl` — `GradientBoostingRegressor(random_state=0)` serializado con `joblib`.
+`GradientBoostingRegressor(random_state=0)`, entrenado sobre las 511 filas del conjunto de entrenamiento.
 
-Se carga y se usa así:
+Al ejecutar el cuaderno [`../notebooks/03-optimizacion-modelos.ipynb`](../notebooks/03-optimizacion-modelos.ipynb) se serializa con `joblib` en `bike-share-model.pkl`. Ese archivo no está en el repositorio (ver `.gitignore`): es un binario no revisable en un diff y atado a la versión de scikit-learn con la que se creó. Se regenera ejecutando el cuaderno.
+
+Una vez generado, se carga y se usa así:
 
 ```python
 import joblib

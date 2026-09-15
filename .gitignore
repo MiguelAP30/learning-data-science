@@ -1,0 +1,12 @@
+# Modelos entrenados — se regeneran ejecutando el notebook correspondiente.
+# No se versionan: son binarios grandes, no se pueden revisar en un diff, y
+# quedan atados a la versión de scikit-learn con la que se generaron.
+*.pkl
+*.joblib
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/

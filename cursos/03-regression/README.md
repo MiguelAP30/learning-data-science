@@ -8,7 +8,7 @@ Predicción del número de alquileres diarios de bicicletas a partir de la estac
 
 | # | Entregable | Archivo |
 |---|---|---|
-| 1 | Baseline + modelo mejorado | [`entregables/comparativa-modelos.md`](entregables/comparativa-modelos.md) · [`entregables/bike-share-model.pkl`](entregables/bike-share-model.pkl) |
+| 1 | Baseline + modelo mejorado | [`entregables/comparativa-modelos.md`](entregables/comparativa-modelos.md) |
 | 2 | Evaluación con RMSE, MAE y R² | [`entregables/comparativa-modelos.md`](entregables/comparativa-modelos.md) |
 | 3 | Notebook con ajuste de hiperparámetros y versión final | [`notebooks/03-optimizacion-modelos.ipynb`](notebooks/03-optimizacion-modelos.ipynb) |
 
@@ -44,3 +44,5 @@ Traducidos al español y adaptados de los ejercicios originales del curso.
 Requiere Python 3.11 con `numpy`, `pandas`, `matplotlib`, `scikit-learn`, `joblib` e `ipykernel`. Abre el notebook en VS Code, selecciona el kernel Python 3.11 y ejecuta las celdas en orden.
 
 > El cuaderno 03 incluye una búsqueda en cuadrícula con validación cruzada (27 entrenamientos): esa celda tarda bastante más que el resto.
+
+Al ejecutar el cuaderno 03 se genera `entregables/bike-share-model.pkl` con el modelo final entrenado. Ese archivo **no se versiona** (está en el `.gitignore`): es un binario que no se puede revisar en un diff y queda atado a la versión de scikit-learn con la que se creó. La fuente de verdad es el cuaderno.
