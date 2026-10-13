@@ -4,6 +4,12 @@
 *.pkl
 *.joblib
 
+# Material de cursos de pago — solo para uso local.
+# Es contenido con derechos reservados (Pierian Data / Udemy) y no tiene
+# licencia que permita redistribuirlo, así que no se publica en el repo.
+# Solo se versiona el trabajo propio (apuntes, entregables, cuadernos propios).
+cursos/07-python-ds-bootcamp/Refactored_Py_DS_ML_Bootcamp-master/
+
 # Python
 __pycache__/
 *.py[cod]
