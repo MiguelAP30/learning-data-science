@@ -29,9 +29,9 @@ Siniestros de seguros con 12 reglas de calidad (descartar / advertir / fallar): 
 
 **→ [`entregables/03-orquestacion-y-versionado.md`](03-orquestacion-y-versionado.md)** · job [`databricks.yml`](../databricks.yml) · verificación [`03-verificacion-calidad.ipynb`](../notebooks/03-verificacion-calidad.ipynb)
 
-Job de 3 tareas con dependencias, parámetros, reintentos, programación y alertas, definido como código (*Declarative Automation Bundle*). Los cuadernos se versionan con Git y los datos con Delta. Incluye la guía paso a paso para ejecutarlo en Azure Databricks y capturar las evidencias.
+Job de 3 tareas con dependencias, parámetros, reintentos, programación y alertas, definido como código (*Declarative Automation Bundle*). Los cuadernos se versionan con Git y los datos con Delta.
 
-> ⏳ Las capturas desde Azure Databricks están pendientes de ejecución en una suscripción de Azure. El resto ya está en el repositorio.
+pendiente [evidencias de ejecución en Azure Databricks]
 
 ---
 

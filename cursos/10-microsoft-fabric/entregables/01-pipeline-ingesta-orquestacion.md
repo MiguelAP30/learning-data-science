@@ -46,16 +46,6 @@ El curso describe dos combinaciones de canalización y flujo de datos:
 
 Se dejó la lectura desde la URL para no depender de los identificadores del área de trabajo y del lakehouse, que el conector *Lakehouse* incrusta en el código M y cambian en cada entorno.
 
-## Cómo montarlo en Fabric
+## Estado
 
-1. En el área de trabajo: **+ New item → Data pipeline** → `pl_ingesta_ventas`. Si se abre el asistente de copia, ciérralo.
-2. Pestaña **Parameters** del lienzo: añade `archivos` (*Array*) con el valor de arriba.
-3. **Activities → ForEach** → `copiar_crudos`. En *Settings → Items*: `@pipeline().parameters.archivos`. Dentro del ForEach (icono del lápiz), añade **Copy data**:
-   - *Source*: conexión **HTTP** nueva, URL `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/`, autenticación *Anonymous*; *Relative URL* `@item()`; formato *Binary*.
-   - *Destination*: tu lakehouse, *Files*, carpeta y nombre con las expresiones de la tabla; formato *Binary*.
-4. **Activities → Dataflow** → `transformar_ventas`, flujo `df_ventas_minoristas`. Arrastra la flecha verde (*On success*) desde `copiar_crudos`.
-5. Importa el cuaderno `02-validacion-lakehouse.ipynb` al área de trabajo (*Import → Notebook*), ábrelo y asócialo al lakehouse (*Add data items*). Después, **Activities → Notebook** → `validar_lakehouse` con *On success* desde `transformar_ventas`.
-6. **Validate**, **Save** y **Run**.
-7. **Schedule**: diario a las 06:00.
-
-La evidencia de ejecución y supervisión está en el [entregable 3](03-evidencia-ejecucion-monitoreo.md).
+pendiente [crear y ejecutar la canalización en Fabric]

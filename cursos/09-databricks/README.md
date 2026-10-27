@@ -34,7 +34,7 @@ Resumen completo: [`entregables/resumen-entregables.md`](entregables/resumen-ent
 
 ## Cómo ejecutar
 
-**En Azure Databricks** (entorno objetivo): conecta este repositorio como *Git folder*, abre un cuaderno con cómputo **Serverless** y ejecútalo. La primera celda crea el esquema y el volumen y descarga los datos. Pasos completos en el [entregable 3](entregables/03-orquestacion-y-versionado.md#3-guía-para-ejecutar-en-azure-databricks-y-capturar-la-evidencia).
+**En Azure Databricks** (entorno objetivo): conecta este repositorio como *Git folder*, abre un cuaderno con cómputo **Serverless** y ejecútalo. La primera celda crea el esquema y el volumen y descarga los datos.
 
 **En local** (con Docker):
 

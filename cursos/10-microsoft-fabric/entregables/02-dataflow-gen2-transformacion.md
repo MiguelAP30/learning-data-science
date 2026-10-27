@@ -44,14 +44,8 @@ Integridad comprobada: sin duplicados en la clave de `fact_ventas` y sin product
 
 Los 542 registros corresponden a 32 pedidos de junio a diciembre de 2022, con 142 productos distintos. Las bicicletas de paseo (*Touring Bikes*) lideran las ventas con el 31%, seguidas de las de carretera (26%) y las de montaña (24%).
 
-## Cómo montarlo en Fabric
+## Estado
 
-1. En el lakehouse: **Get data → New Dataflow Gen2**.
-2. **Parámetro:** *Home → Manage parameters → New*. Nombre `UrlBase`, tipo *Text*, valor `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/`.
-3. **Cada consulta:** *Get data → Blank query*, abre el **editor avanzado** y pega el contenido del `.m` correspondiente, sin la línea de comentario inicial. Renombra la consulta con el nombre del archivo. Créalas en este orden: `dim_producto`, `dim_cliente`, `fact_ventas`, `dim_fecha`, `ventas_mensuales` (las últimas dependen de las primeras).
-4. La primera vez, Fabric pide **configurar la conexión** a `raw.githubusercontent.com`: autenticación *Anonymous*.
-5. **Destino de cada consulta** (las cinco tablas): *Lakehouse*, tabla nueva con el mismo nombre, desactivar la configuración automática y elegir **Replace**.
-6. Activa la **vista de diagrama** para ver las dependencias entre consultas.
-7. **Save & run.**
+pendiente [crear y ejecutar el flujo de datos en Fabric]
 
 > **Por qué la cultura `en-US` en los tipos.** Los CSV usan el punto como separador decimal. Con la configuración regional en español, `356.9` podría interpretarse como 3569. Indicar la cultura en `Table.TransformColumnTypes` hace que el resultado no dependa de la región de quien ejecuta el flujo.

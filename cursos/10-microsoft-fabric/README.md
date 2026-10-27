@@ -30,6 +30,6 @@ Resumen completo: [`entregables/resumen-entregables.md`](entregables/resumen-ent
 
 ## Cómo ejecutar
 
-- **En Microsoft Fabric:** guías paso a paso en los entregables [1](entregables/01-pipeline-ingesta-orquestacion.md#cómo-montarlo-en-fabric) y [2](entregables/02-dataflow-gen2-transformacion.md#cómo-montarlo-en-fabric).
+- **En Microsoft Fabric:** pendiente [montaje del flujo de datos y la canalización].
 - **La réplica en pandas:** Python 3.11 con `pandas` y `matplotlib`; ejecuta `notebooks/01-replica-dataflow-pandas.ipynb`.
 - **La validación en local:** necesita Spark. Se puede usar el contenedor del [Curso 09](../09-databricks/entorno-local/), después de ejecutar la réplica.

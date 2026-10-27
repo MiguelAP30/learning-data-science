@@ -10,9 +10,6 @@
 #   databricks bundle validate
 #   databricks bundle deploy -t dev
 #   databricks bundle run curso09_ingesta_y_calidad -t dev
-#
-# También se puede crear el mismo job a mano desde la interfaz: ver
-# entregables/03-orquestacion-y-versionado.md.
 
 bundle:
   name: curso09-databricks

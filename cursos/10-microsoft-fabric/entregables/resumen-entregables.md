@@ -29,9 +29,9 @@ Flujo `df_ventas_minoristas`: un parámetro y cinco consultas que forman un **es
 
 **→ [`entregables/03-evidencia-ejecucion-monitoreo.md`](03-evidencia-ejecucion-monitoreo.md)** · validación [`02-validacion-lakehouse.ipynb`](../notebooks/02-validacion-lakehouse.ipynb)
 
-Guía con las 12 capturas que documentan la ejecución y la supervisión (salida de la canalización, centro de supervisión, historial, una ejecución fallida diagnosticada y las tablas en el lakehouse). La lógica y el cuaderno de validación ya están verificados fuera de Fabric.
+La lógica del flujo y el cuaderno de validación están verificados fuera de Fabric.
 
-> ⏳ Las capturas desde Microsoft Fabric están pendientes de ejecución con una capacidad de prueba. El resto ya está en el repositorio.
+pendiente [evidencias de ejecución y monitoreo en Microsoft Fabric]
 
 ---
 
