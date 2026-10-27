@@ -4,8 +4,8 @@
 
 | Qué | Dónde | Resultado |
 |---|---|---|
-| La lógica del flujo de datos | [`01-replica-dataflow-pandas.ipynb`](../notebooks/01-replica-dataflow-pandas.ipynb) | 5 tablas, 5 comprobaciones de integridad ✅ |
-| El cuaderno de validación de la canalización | [`02-validacion-lakehouse.ipynb`](../notebooks/02-validacion-lakehouse.ipynb), ejecutado con Spark sobre los resultados esperados | 12 comprobaciones ✅ |
+| La lógica del flujo de datos | [`01-replica-dataflow-pandas.ipynb`](../notebooks/01-replica-dataflow-pandas.ipynb) | 5 tablas, 5 comprobaciones de integridad superadas |
+| El cuaderno de validación de la canalización | [`02-validacion-lakehouse.ipynb`](../notebooks/02-validacion-lakehouse.ipynb), ejecutado con Spark sobre los resultados esperados | 12 comprobaciones superadas |
 | Los valores que deben salir en Fabric | [`datos-esperados/valores-control.csv`](../datos-esperados/valores-control.csv) | 542 / 295 / 847 / 365 / 122 filas; ventas 708 690.07 |
 
 ## Evidencias en Microsoft Fabric

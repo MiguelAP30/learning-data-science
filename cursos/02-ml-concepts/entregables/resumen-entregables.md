@@ -11,9 +11,9 @@ Curso: [Fundamentals of machine learning](https://learn.microsoft.com/training/m
 
 | # | Entregable pedido | Estado | Dónde está |
 |---|---|---|---|
-| 1 | Mapa conceptual de tipos de ML (regresión, clasificación, clustering, deep learning) | ✅ | [`01-mapa-conceptual-tipos-ml.md`](01-mapa-conceptual-tipos-ml.md) |
-| 2 | Matriz de escenarios para seleccionar tipo de modelo | ✅ | [`02-matriz-escenarios.md`](02-matriz-escenarios.md) |
-| 3 | Notebook corto con ejemplos de problema supervisado y no supervisado | ✅ | [`../notebooks/01-explorar-escenarios-ml.ipynb`](../notebooks/01-explorar-escenarios-ml.ipynb) |
+| 1 | Mapa conceptual de tipos de ML (regresión, clasificación, clustering, deep learning) | Completo | [`01-mapa-conceptual-tipos-ml.md`](01-mapa-conceptual-tipos-ml.md) |
+| 2 | Matriz de escenarios para seleccionar tipo de modelo | Completo | [`02-matriz-escenarios.md`](02-matriz-escenarios.md) |
+| 3 | Notebook corto con ejemplos de problema supervisado y no supervisado | Completo | [`../notebooks/01-explorar-escenarios-ml.ipynb`](../notebooks/01-explorar-escenarios-ml.ipynb) |
 
 ## Detalle
 

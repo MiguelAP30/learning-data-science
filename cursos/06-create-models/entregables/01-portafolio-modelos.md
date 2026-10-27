@@ -62,10 +62,10 @@ A la izquierda, el modelo elegido: diagonal perfecta. A la derecha, el mismo pro
 
 | Caso del ejercicio | Gasto | Frecuencia | Clúster | Distancia a su centro |
 |---|---|---|---|---|
-| 1 | 21.0 | 105.0 | 1 | **3.20** ⚠️ |
+| 1 | 21.0 | 105.0 | 1 | **3.20** (atípico) |
 | 2 | 46.9 | 2.0 | 3 | 0.75 |
 
-⚠️ El caso 1 tiene una frecuencia que dobla el máximo de los datos (50). K-Means le asigna un clúster de todos modos, pero queda a más de 4 veces la distancia del cliente real más alejado de cualquier centro (0.703). Es un caso atípico, no un miembro típico del clúster 1.
+El caso 1 tiene una frecuencia que dobla el máximo de los datos (50). K-Means le asigna un clúster de todos modos, pero queda a más de 4 veces la distancia del cliente real más alejado de cualquier centro (0.703). Es un caso atípico, no un miembro típico del clúster 1.
 
 ---
 
