@@ -1,0 +1,123 @@
+Year,MonthNo,Category,Pedidos,Unidades,Ventas
+2022,6,Touring Bikes,3,165,145280.66
+2022,6,Road Bikes,1,69,51096.06
+2022,6,Mountain Bikes,1,44,25125.72
+2022,6,Touring Frames,3,38,18463.92
+2022,6,Road Frames,2,26,10745.7
+2022,6,Mountain Frames,1,11,3937.58
+2022,6,Jerseys,3,116,3529.08
+2022,6,Vests,3,66,2327.59
+2022,6,Helmets,3,76,1529.43
+2022,6,Hydration Packs,4,28,923.84
+2022,6,Bike Racks,3,11,792.0
+2022,6,Pedals,2,16,587.96
+2022,6,Shorts,1,13,545.92
+2022,6,Cranksets,1,2,485.99
+2022,6,Gloves,3,30,440.82
+2022,6,Derailleurs,1,5,328.42
+2022,6,Bottom Brackets,1,5,323.97
+2022,6,Handlebars,3,6,310.72
+2022,6,Caps,3,31,164.09
+2022,6,Brakes,2,2,127.8
+2022,6,Saddles,3,4,126.33
+2022,6,Cleaners,3,26,124.02
+2022,6,Bottles and Cages,3,27,79.1
+2022,6,Tires and Tubes,2,14,19.23
+2022,6,Socks,1,1,5.39
+2022,7,Road Bikes,1,61,51328.25
+2022,7,Mountain Bikes,2,27,21766.65
+2022,7,Road Frames,2,23,9945.84
+2022,7,Mountain Frames,1,26,7659.22
+2022,7,Touring Bikes,1,3,2604.76
+2022,7,Jerseys,2,54,1590.77
+2022,7,Shorts,2,22,895.11
+2022,7,Vests,1,24,801.21
+2022,7,Bike Racks,1,10,720.0
+2022,7,Pedals,2,16,575.0
+2022,7,Helmets,1,22,448.6
+2022,7,Hydration Packs,1,10,329.94
+2022,7,Handlebars,2,5,280.35
+2022,7,Gloves,1,17,249.81
+2022,7,Saddles,2,4,111.02
+2022,7,Cleaners,1,17,70.62
+2022,7,Brakes,1,1,63.9
+2022,7,Caps,2,10,53.94
+2022,7,Bottles and Cages,1,11,31.2
+2022,7,Socks,2,5,26.97
+2022,7,Tires and Tubes,1,6,8.24
+2022,8,Mountain Bikes,2,21,23263.7
+2022,8,Touring Bikes,2,16,11633.68
+2022,8,Mountain Frames,2,26,10986.0
+2022,8,Cranksets,1,4,558.87
+2022,8,Brakes,2,4,255.6
+2022,8,Saddles,1,10,251.04
+2022,8,Bottom Brackets,1,3,218.68
+2022,8,Shorts,1,5,209.97
+2022,8,Jerseys,2,6,184.77
+2022,8,Pedals,2,4,171.7
+2022,8,Derailleurs,3,3,164.67
+2022,8,Handlebars,1,2,63.87
+2022,8,Chains,2,4,48.57
+2022,8,Caps,1,3,16.18
+2022,8,Cleaners,1,1,4.77
+2022,9,Touring Bikes,1,10,10364.29
+2022,9,Road Bikes,1,6,2640.56
+2022,9,Road Frames,1,1,858.9
+2022,9,Jerseys,3,11,351.53
+2022,9,Vests,3,7,266.7
+2022,9,Bike Racks,1,3,216.0
+2022,9,Socks,1,13,67.0
+2022,9,Brakes,1,1,63.9
+2022,9,Pedals,1,2,48.59
+2022,9,Saddles,1,2,46.97
+2022,9,Caps,1,4,21.58
+2022,9,Helmets,1,1,20.99
+2022,10,Touring Bikes,1,58,50771.96
+2022,10,Mountain Bikes,2,64,50330.09
+2022,10,Mountain Frames,2,18,8347.93
+2022,10,Road Bikes,1,2,2041.18
+2022,10,Road Frames,1,5,1475.35
+2022,10,Cranksets,1,7,1150.16
+2022,10,Jerseys,3,29,920.23
+2022,10,Pedals,4,19,610.62
+2022,10,Touring Frames,1,1,602.35
+2022,10,Shorts,1,14,587.92
+2022,10,Vests,2,15,571.5
+2022,10,Bottom Brackets,1,7,388.76
+2022,10,Bike Racks,2,5,360.0
+2022,10,Helmets,1,13,272.93
+2022,10,Handlebars,2,4,173.18
+2022,10,Hydration Packs,1,5,164.97
+2022,10,Derailleurs,1,3,164.68
+2022,10,Saddles,2,6,158.87
+2022,10,Brakes,1,1,63.9
+2022,10,Socks,1,7,37.76
+2022,10,Gloves,1,2,29.39
+2022,10,Cleaners,1,5,23.85
+2022,10,Bottles and Cages,1,7,20.96
+2022,10,Caps,1,3,16.18
+2022,10,Chains,1,1,12.14
+2022,11,Road Bikes,2,84,76024.25
+2022,11,Mountain Bikes,1,53,50339.75
+2022,11,Mountain Frames,1,47,24018.86
+2022,11,Cranksets,1,9,1773.84
+2022,11,Road Frames,1,5,1320.8
+2022,11,Shorts,1,26,1060.88
+2022,11,Pedals,3,27,1002.61
+2022,11,Derailleurs,1,10,638.85
+2022,11,Jerseys,1,14,441.51
+2022,11,Bottom Brackets,1,7,388.76
+2022,11,Handlebars,2,10,364.82
+2022,11,Vests,1,9,342.9
+2022,11,Saddles,1,12,284.47
+2022,11,Brakes,1,4,255.6
+2022,11,Helmets,2,12,251.92
+2022,11,Hydration Packs,1,7,230.96
+2022,11,Bike Racks,1,3,216.0
+2022,11,Socks,3,40,208.1
+2022,11,Gloves,2,8,117.55
+2022,11,Chains,1,3,36.43
+2022,11,Cleaners,1,6,28.62
+2022,11,Bottles and Cages,2,9,26.94
+2022,11,Caps,1,1,5.39
+2022,12,Saddles,1,1,31.58

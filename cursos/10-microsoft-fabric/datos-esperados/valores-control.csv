@@ -1,0 +1,6 @@
+tabla,filas,control,valor
+fact_ventas,542,suma LineItemTotal,708690.07
+dim_producto,295,productos distintos,295.0
+dim_cliente,847,clientes distintos,847.0
+dim_fecha,365,días,365.0
+ventas_mensuales,122,suma Ventas,708690.07
