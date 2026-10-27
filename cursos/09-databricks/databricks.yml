@@ -1,0 +1,77 @@
+# Declarative Automation Bundle (Databricks Asset Bundle) del Curso 09.
+#
+# Define el job que orquesta los tres cuadernos:
+#
+#   ingesta_llamadas ─────┐
+#                         ├──> verificacion_calidad
+#   pipeline_siniestros ──┘
+#
+# Despliegue con la CLI de Databricks, desde esta carpeta:
+#   databricks bundle validate
+#   databricks bundle deploy -t dev
+#   databricks bundle run curso09_ingesta_y_calidad -t dev
+#
+# También se puede crear el mismo job a mano desde la interfaz: ver
+# entregables/03-orquestacion-y-versionado.md.
+
+bundle:
+  name: curso09-databricks
+
+variables:
+  catalogo:
+    description: Catálogo de Unity Catalog donde se crean las tablas
+    default: adb-dp750
+  esquema:
+    description: Esquema dentro del catálogo
+    default: curso09
+
+resources:
+  jobs:
+    curso09_ingesta_y_calidad:
+      name: curso09-ingesta-y-calidad
+      description: Ingesta de llamadas, pipeline de siniestros con calidad de datos y verificación final.
+
+      # Los parámetros del job llegan a los cuadernos como widgets con el mismo nombre
+      parameters:
+        - name: catalogo
+          default: ${var.catalogo}
+        - name: esquema
+          default: ${var.esquema}
+
+      tasks:
+        - task_key: ingesta_llamadas
+          notebook_task:
+            notebook_path: ./notebooks/01-ingesta-transformacion-spark.ipynb
+          max_retries: 1
+          min_retry_interval_millis: 60000
+
+        - task_key: pipeline_siniestros
+          notebook_task:
+            notebook_path: ./notebooks/02-pipeline-delta-calidad.ipynb
+          max_retries: 1
+          min_retry_interval_millis: 60000
+
+        - task_key: verificacion_calidad
+          depends_on:
+            - task_key: ingesta_llamadas
+            - task_key: pipeline_siniestros
+          notebook_task:
+            notebook_path: ./notebooks/03-verificacion-calidad.ipynb
+
+      # Todas las noches a las 2:00 (hora de Bogotá); en pausa para no consumir sin querer
+      schedule:
+        quartz_cron_expression: "0 0 2 * * ?"
+        timezone_id: America/Bogota
+        pause_status: PAUSED
+
+      timeout_seconds: 3600
+      max_concurrent_runs: 1
+
+      # Añade aquí tu correo para recibir el aviso si el job falla
+      email_notifications:
+        on_failure: []
+
+targets:
+  dev:
+    mode: development
+    default: true
